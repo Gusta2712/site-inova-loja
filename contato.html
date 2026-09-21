@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Contato | Nova Informática</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Endereço, telefones, WhatsApp e horário de atendimento da Nova Informática em Campinas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="top-strip">
+  <div class="container">
+    <div class="top-strip__contacts">
+      <span data-store-phones></span>
+      <a data-wa-link="Olá! Vim pelo site e gostaria de mais informações." target="_blank" rel="noopener">WhatsApp (19) 98167-8544</a>
+      <a data-store-email href=""></a>
+    </div>
+    <div class="top-strip__hours">Seg. a Sex. 9h-18h · Sáb. 9h-13h</div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" data-logo aria-label="Nova Informática — página inicial"></a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <ul data-cat-nav></ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary" data-wa-link="Olá! Vim pelo site e gostaria de mais informações." target="_blank" rel="noopener">
+        <span data-icon="whatsapp"></span><span>Falar no WhatsApp</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+
+<section class="page-hero">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Início</a> / Contato</p>
+    <h1>Fale com a gente</h1>
+    <p>Atendimento presencial no Centro de Campinas ou pelo WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div>
+      <h2>Onde nos encontrar</h2>
+      <div class="contact-info">
+        <div class="contact-info__item" data-icon="mappin">
+          <div><strong>Endereço</strong><p data-store-address></p></div>
+        </div>
+        <div class="contact-info__item" data-icon="phone">
+          <div><strong>Telefones</strong><p data-store-phones></p></div>
+        </div>
+        <div class="contact-info__item" data-icon="whatsapp">
+          <div><strong>WhatsApp</strong><p><a data-wa-link="Ola! Vim pelo site e gostaria de mais informacoes." target="_blank" rel="noopener">(19) 98167-8544</a></p></div>
+        </div>
+        <div class="contact-info__item" data-icon="mail">
+          <div><strong>E-mail</strong><p data-store-email></p></div>
+        </div>
+        <div class="contact-info__item" data-icon="clock">
+          <div><strong>Horário</strong><p>Seg. a Sex.: 9h às 18h<br>Sáb.: 9h às 13h</p></div>
+        </div>
+      </div>
+      <div class="contact-map">
+        <iframe title="Mapa da loja" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Rua+Barao+de+Jaguara+1037+Campinas+SP&output=embed"></iframe>
+      </div>
+    </div>
+
+    <div>
+      <h2>Envie uma mensagem</h2>
+      <p>Preencha os campos e a conversa abre direto no WhatsApp da loja.</p>
+      <form data-contact-form novalidate>
+        <div class="form-field">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Seu nome" required>
+          <small>Informe seu nome.</small>
+        </div>
+        <div class="form-field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" required>
+          <small>Informe um e-mail válido.</small>
+        </div>
+        <div class="form-field">
+          <label for="assunto">Assunto</label>
+          <select id="assunto" required>
+            <option value="Orçamento de produto">Orçamento de produto</option>
+            <option value="Assistência técnica">Assistência técnica</option>
+            <option value="Dúvida sobre pedido">Dúvida sobre pedido</option>
+            <option value="Outro assunto">Outro assunto</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+          <small>Escreva sua mensagem.</small>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Enviar mensagem</button>
+      </form>
+      <div class="form-success" data-form-success>
+        <strong>Tudo certo!</strong>
+        <p>Clique no botão abaixo para abrir a conversa com a mensagem já preenchida.</p>
+        <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Abrir WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter">
+  <div class="container">
+    <div>
+      <h2>Promoções exclusivas por e-mail</h2>
+      <p>Cadastre-se e receba primeiro nossas novidades.</p>
+    </div>
+    <form data-newsletter-form>
+      <input type="email" placeholder="Seu melhor e-mail" required>
+      <button class="btn btn-primary" type="submit">Inscrever-se</button>
+      <span class="form-msg"></span>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="footer-logo" data-logo></div>
+      <p>Sua loja de PCs, notebooks e acessórios gamers em Campinas.</p>
+      <div class="footer-social">
+        <a href="https://api.whatsapp.com/send/?phone=5519981678544" target="_blank" rel="noopener" aria-label="WhatsApp" data-icon="whatsapp"></a>
+        <a href="https://www.instagram.com/novainformaticacampinas/" target="_blank" rel="noopener" aria-label="Instagram" data-icon="instagram"></a>
+        <a href="https://www.facebook.com/NovaInformaticaCampinas" target="_blank" rel="noopener" aria-label="Facebook" data-icon="facebook"></a>
+      </div>
+    </div>
+    <div>
+      <h4>Categorias</h4>
+      <ul data-cat-nav></ul>
+    </div>
+    <div>
+      <h4>Institucional</h4>
+      <ul>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="politicas.html?tab=termos">Termos e Condições</a></li>
+        <li><a href="politicas.html?tab=privacidade">Política de Privacidade</a></li>
+        <li><a href="politicas.html?tab=trocas">Trocas e Devoluções</a></li>
+        <li><a href="politicas.html?tab=lgpd">LGPD</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <p data-store-address></p>
+      <p data-store-phones></p>
+      <p data-store-email></p>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2026 Nova Informática. Todos os direitos reservados.</span>
+    <span>Campinas/SP</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa-float target="_blank" rel="noopener" aria-label="Falar no WhatsApp" data-icon="whatsapp"></a>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

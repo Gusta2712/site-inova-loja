@@ -1,0 +1,57 @@
+SITE NOVA INFORMÁTICA — arquivos do projeto
+===========================================
+
+COMO VISUALIZAR
+Abra o arquivo "index.html" no navegador. Não precisa instalar nada.
+
+COMO PUBLICAR
+Suba a pasta inteira (com css/ e js/) na hospedagem. O index.html
+precisa ficar na raiz.
+
+ESTRUTURA
+  index.html       Página inicial
+  categoria.html   Página de produtos (uma só, serve todas as categorias
+                   via URL: categoria.html?cat=hardware)
+  contato.html     Contato, mapa e formulário
+  politicas.html   Termos, privacidade, trocas e LGPD (em abas)
+  css/style.css    Todo o visual e o responsivo
+  js/data.js       *** ONDE VOCÊ EDITA O CONTEÚDO ***
+  js/main.js       Comportamento (menu, filtros, formulários)
+
+O QUE EDITAR PRIMEIRO (tudo em js/data.js)
+  1. PRODUCTS  — troque os produtos de exemplo pelos reais
+                 (nome, cat, price e tag opcional).
+  2. STORE     — confira telefone, WhatsApp, e-mail, endereço e redes.
+  3. CATEGORIES— as 10 abas do site antigo já estão aqui; para
+                 renomear ou acrescentar, basta editar a lista.
+
+CORES DA MARCA (definidas no topo do css/style.css)
+  Vermelho  #D5162F   — cor principal, tirada da logo
+  Azul      #0B62D6   — selo "informática" da logo
+  Preto     #14171C
+  Prata     #8B929B   — o cromado das letras
+
+PENDÊNCIAS ANTES DE PUBLICAR
+  - Trocar os textos das políticas pelos oficiais do cliente.
+  - Substituir os produtos de exemplo pelos reais (com fotos, se houver).
+  - Conferir o endereço no mapa do contato.html.
+  - A logo desenhada em codigo ja esta maior. Se o cliente tiver a logo em PNG/SVG, me avise que eu troco a logo
+    desenhada em código pelo arquivo original.
+
+ANIMACAO DO HERO (index.html)
+  O produto ilustrado no canto direito do hero inclina em 3D seguindo
+  o mouse (efeito usado em paginas de produto da Apple), com um brilho
+  que acompanha o cursor. E controlado em js/main.js, funcao
+  mountHeroTilt(). Para deixar a inclinacao mais forte ou mais suave,
+  mude o valor de MAX_TILT (em graus) no comeco dessa funcao.
+  Em celular (sem mouse) e para quem usa "reduzir movimento" no
+  sistema, o produto fica parado, sem animacao.
+
+CORES INVERTIDAS
+  Onde antes era preto agora e azul (fundo do topo, do menu, do hero,
+  do rodape, da newsletter e dos titulos), e onde era azul agora e
+  preto (botao secundario "Consultar no WhatsApp", categoria dos
+  produtos, icones da pagina de contato, linha de cima dos cards
+  "Por que a Nova Informatica" e o sublinhado das marcas). O vermelho
+  nao mudou. Se quiser voltar como estava ou ajustar os tons, mexa
+  nas variaveis --ink e --blue no topo do css/style.css.
